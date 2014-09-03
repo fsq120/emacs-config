@@ -1,0 +1,14 @@
+/home/xuwei/code/idl/paddle/trainer/Trainer.cpp
+/home/xuwei/code/idl/paddle/trainer/#Trainer.cpp#
+/home/xuwei/code/idl/paddle/common/Matrix.h
+/home/xuwei/code/idl/paddle/common/#Matrix.h#
+/home/xuwei/code/idl/paddle/gserver/GradientMachine.h
+/home/xuwei/code/idl/paddle/gserver/#GradientMachine.h#
+/home/xuwei/code/idl/paddle/gserver/NeuralNetwork.cpp
+/home/xuwei/code/idl/paddle/gserver/#NeuralNetwork.cpp#
+/home/xuwei/code/idl/paddle/gserver/Layer.h
+/home/xuwei/code/idl/paddle/gserver/#Layer.h#
+/home/xuwei/code/idl/paddle/gserver/DataProvider.h
+/home/xuwei/code/idl/paddle/gserver/#DataProvider.h#
+/home/xuwei/code/idl/paddle/COMAKE
+/home/xuwei/code/idl/paddle/#COMAKE#

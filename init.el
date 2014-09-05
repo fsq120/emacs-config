@@ -229,3 +229,9 @@ try-complete-lisp-symbol))
  
 ;; 关闭时自动保存
 (add-hook 'kill-emacs-hook 'win-save-all-configurations)
+
+;; add protobuf
+(require 'protobuf-mode)
+(add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
+(add-to-list 'auto-mode-alist '("\\.prototxt\\'" . protobuf-mode))
+

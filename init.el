@@ -232,6 +232,7 @@ try-complete-lisp-symbol))
 
 ;; add protobuf
 (require 'protobuf-mode)
+(autoload 'protobuf-mode "protobuf-mode" "protobuf mode" t )
 (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
 (add-to-list 'auto-mode-alist '("\\.prototxt\\'" . protobuf-mode))
 

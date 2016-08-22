@@ -80,7 +80,7 @@
        "# " \n
        "# "(file-name-nondirectory (buffer-file-name)) \n
        "#" > \n
-       "# Author: jonefeng (jonefeng@tencent.com)" > \n
+       "# Author: jonefeng (shouqiang.fsq@ant-financial.com)" > \n
        "# Created on: " (format-time-string "%Y-%m-%d") > \n
        "#" > \n
        "# Copyright (c) Tencent.com, Inc. All Rights Reserved" > \n
@@ -93,7 +93,7 @@
        "/**\n * "
        (file-name-nondirectory (buffer-file-name)) \n
        " *" > \n
-       " * Author: jonefeng (jonefeng@tencent.com)" > \n
+       " * Author: jonefeng (shouqiang.fsq@ant-financial.com)" > \n
        " * Created on: " (format-time-string "%Y-%m-%d") > \n
        " *" > \n
        " * Copyright (c) Tencent.com, Inc. All Rights Reserved" > \n
@@ -108,7 +108,7 @@
        "/**\n * "
        (file-name-nondirectory (buffer-file-name)) \n
        " *" > \n
-       " * Author: jonefeng (jonefeng@tencent.com)" > \n
+       " * Author: jonefeng (shouqiang.fsq@ant-financial.com)" > \n
        " * Created on: " (format-time-string "%Y-%m-%d") > \n
        " *" > \n
        " * Copyright (c) Tencent.com, Inc. All Rights Reserved" > \n
@@ -154,22 +154,26 @@ try-complete-lisp-symbol))
         (insert (format prefix @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @))
         (setq @ (1+ @))))))
 
+
 ;;===========================================================================
 ;;sr-speedbar-mode
 ;;===========================================================================
 (require 'sr-speedbar)
+(add-hook 'after-init-hook '(lambda () (sr-speedbar-toggle)))
 ;;默认显示所有文件
 
 ;;sr-speedbar-right-side 把speedbar放在左侧位置
 ;;sr-speedbar-skip-other-window-p 多窗口切换时跳过speedbar窗口
 ;;sr-speedbar-max-width与sr-speedbar-width-x 设置宽度
 (setq sr-speedbar-right-side nil)
-(setq sr-speedbar-width 30)
+(setq sr-speedbar-width 20)
 (setq speedbar-show-unknown-files t)
+(setq sr-speedbar-auto-refreshs t)
 (setq dframe-update-speed t)        ; prevent the speedbar to update the current state, since it is always changing
 
 ;; 绑定快捷键
 (global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
+
 
 (setq-default indent-tabs-mode nil)
 
@@ -236,3 +240,29 @@ try-complete-lisp-symbol))
 (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
 (add-to-list 'auto-mode-alist '("\\.prototxt\\'" . protobuf-mode))
 
+(global-set-key (kbd "C-z") 'undo)
+(setq inhibit-startup-message t)
+(setq column-number-mode t)
+
+;;; uncomment for CJK utf-8 support for non-Asian users
+;; (require 'un-define)
+(require 'xt-mouse)
+(xterm-mouse-mode)
+(require 'mouse)
+(xterm-mouse-mode t)
+(defun track-mouse (e))
+
+(setq mouse-wheel-follow-mouse 't)
+;;(global-set-key (kbd "<mouse-4>") 'scroll-up-half)
+;;(global-set-key (kbd "<mouse-5>") 'scroll-down-half)
+
+(defun smooth-scroll (increment)
+  (scroll-up increment) (sit-for 0.05)
+  (scroll-up increment) (sit-for 0.02)
+  (scroll-up increment) (sit-for 0.02)
+  (scroll-up increment) (sit-for 0.05)
+  (scroll-up increment) (sit-for 0.06)
+  (scroll-up increment))
+
+(global-set-key [(mouse-5)] '(lambda () (interactive) (smooth-scroll 1)))
+(global-set-key [(mouse-4)] '(lambda () (interactive) (smooth-scroll -1)))

@@ -166,14 +166,14 @@ try-complete-lisp-symbol))
 ;;sr-speedbar-skip-other-window-p 多窗口切换时跳过speedbar窗口
 ;;sr-speedbar-max-width与sr-speedbar-width-x 设置宽度
 (setq sr-speedbar-right-side nil)
-(setq sr-speedbar-width 20)
+(setq sr-speedbar-width 30)
 (setq speedbar-show-unknown-files t)
 (setq sr-speedbar-auto-refreshs t)
 (setq dframe-update-speed t)        ; prevent the speedbar to update the current state, since it is always changing
 
 ;; 绑定快捷键
 (global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
-
+(global-set-key (kbd "TAB") 'c-indent-line-or-region)
 
 (setq-default indent-tabs-mode nil)
 

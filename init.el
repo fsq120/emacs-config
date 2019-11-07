@@ -1,3 +1,8 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
 (add-to-list 'load-path "~/.emacs.d")
 
 (global-font-lock-mode t)
@@ -185,9 +190,14 @@ try-complete-lisp-symbol))
 (global-set-key [f11] 'fullscreen)
 
 ;; color theme
-(require 'color-theme)
+;;(require 'color-theme)
 ;;(color-theme-initialize)
-(color-theme-euphoria)
+;;(color-theme-euphoria)
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-robin-hood)
+;; set default color theme
+(color-theme-gnome2)
 
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
@@ -239,6 +249,11 @@ try-complete-lisp-symbol))
 (autoload 'protobuf-mode "protobuf-mode" "protobuf mode" t )
 (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
 (add-to-list 'auto-mode-alist '("\\.prototxt\\'" . protobuf-mode))
+
+;; add go mode
+;;(require 'go-mode)
+(autoload 'go-mode "go-mode" "go mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 
 (global-set-key (kbd "C-z") 'undo)
 (setq inhibit-startup-message t)

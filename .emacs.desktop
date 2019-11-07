@@ -2,127 +2,16 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Sep  5 14:55:24 2014
+;; Created Thu Nov  7 17:12:30 2019
 ;; Desktop file format version 206
-;; Emacs version 23.4.1
+;; Emacs version 22.1.1
 
 ;; Global section:
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("blobproto" "blobs_lr" "blobs" "layerparameter" "netparameter" "solver" "pool5" "fc6" "9216" "fc8"))
+(setq search-ring '("go-mode" "ad-adviad" "ad-advi" "cout" "buffer" "index_full" "ret" "	" "cmake_cxx_flags" "src_dir"))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.windows" "~/deeplearning/caffe/examples/mnist/lenet_train_test.prototxt" "~/deeplearning/caffe/examples/mnist/lenet_consolidated_solver.prototxt" "~/deeplearning/caffe/src/caffe/proto/caffe.proto" "~/deeplearning/caffe/examples/mnist/lenet_iter_5000.solverstate" "~/deeplearning/caffe/examples/mnist/lenet_solver.prototxt" "~/deeplearning/caffe/examples/imagenet/imagenet_solver.prototxt" "~/deeplearning/caffe/examples/imagenet/imagenet_full_conv.prototxt" "~/deeplearning/caffe/examples/mnist/lenet.prototxt" "~/deeplearning/caffe/src/caffe/proto/caffe_pretty_print.proto" "~/deeplearning/caffe/examples/imagenet/imagenet_deploy.prototxt"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/examples/mnist/lenet_iter_5000.solverstate"
-  "lenet_iter_5000.solverstate"
-  'fundamental-mode
-  nil
-  1724364
-  '(1 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . no-conversion) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/examples/imagenet/imagenet_deploy.prototxt"
-  "imagenet_deploy.prototxt"
-  'fundamental-mode
-  nil
-  519
-  '(2048 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/src/caffe/proto/caffe_pretty_print.proto"
-  "caffe_pretty_print.proto"
-  'fundamental-mode
-  nil
-  603
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/examples/imagenet/imagenet_full_conv.prototxt"
-  "imagenet_full_conv.prototxt"
-  'fundamental-mode
-  nil
-  320
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/examples/imagenet/imagenet_solver.prototxt"
-  "imagenet_solver.prototxt"
-  'fundamental-mode
-  nil
-  60
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/src/caffe/proto/caffe.proto"
-  "caffe.proto"
-  'fundamental-mode
-  nil
-  9907
-  '(56 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/examples/mnist/lenet.prototxt"
-  "lenet.prototxt"
-  'fundamental-mode
-  nil
-  160
-  '(1535 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/examples/mnist/lenet_solver.prototxt"
-  "lenet_solver.prototxt"
-  'fundamental-mode
-  nil
-  594
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/examples/mnist/lenet_consolidated_solver.prototxt"
-  "lenet_consolidated_solver.prototxt"
-  'fundamental-mode
-  nil
-  1793
-  '(4921 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/jone/deeplearning/caffe/examples/mnist/lenet_train_test.prototxt"
-  "lenet_train_test.prototxt"
-  'fundamental-mode
-  nil
-  321
-  '(1639 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
